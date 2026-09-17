@@ -35,7 +35,7 @@
             else
             {
                 Console.WriteLine("Mingid kahtlased väärtused");
-            
+            }
         }
     }
 }
