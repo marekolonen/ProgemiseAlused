@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿﻿using System.Drawing;
 
 namespace IfElseColor
 {
@@ -6,31 +6,36 @@ namespace IfElseColor
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("teha if ja else konsoolirakendus, kus " + 
-                "kontrollitakse stringi abil värvi vastavust");
-
-            Console.WriteLine("Värvide valikuks on: red, blue, green ja white");
-
-            Console.WriteLine("Peab käsitlema juhust, kus vastaja ei sisesta" + 
-                "eelpool sisestatud värvi");
-
+            Console.WriteLine("Sisesta värv");
+            //Kirjuta konsooli tekst ja vajuta enter
+            //kui kasutad if ja else, siis esimene kontroll on if
+            //ja järgneb else if ning kõige viimane on alati else
             String Color = Console.ReadLine();
             if (Color == "Red")
             {
-            Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Sisestasite Red");
             }
-            else if  (Color == "Blue")
+            else if (Color == "Blue")
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Sisestasite Blue");
             }
+            else if (Color == "Green")
+            {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Sisestasite Green");
-            {
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Sisestasite Cyan");
             }
-            Console.WriteLine("Vale värv");
+            else if (Color == "White")
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Sisestasite White");
+            }
+            else
+            {
+                Console.WriteLine("Vale värv");
+            }
+
         }
     }
 }
