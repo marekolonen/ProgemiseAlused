@@ -31,6 +31,9 @@
                 case 6:
                     Console.WriteLine("Saite number 6");
                     break;
+                default:
+                    Console.Writeline("ERROR");
+                    break;
             }
         }
     }
