@@ -20,7 +20,7 @@ namespace SwitchCalculator
             //kasutage floati Parsimisel
             float answer;
 
-            switch(input)
+            switch (input)
             {
                 case "+":
                     Console.WriteLine($"Liitmise tulemus: {FirstNr} + {SecondNr} = {FirstNr + SecondNr}");
@@ -45,7 +45,7 @@ namespace SwitchCalculator
                         Console.WriteLine($"Jagamise tulemus: {FirstNr} / {SecondNr} = {FirstNr / SecondNr}");
                     }
                     break;
-                   
+
                 default:
                     Console.WriteLine("Valisid vale tingmärgi");
                     break;
